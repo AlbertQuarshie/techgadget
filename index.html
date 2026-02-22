@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Selection Challenge</title>
+    <style>
+        *{
+            text-align: center;
+            box-sizing: border-box;
+            margin-left: 50px;
+            margin-right: 50px;
+            background-color: bisque;
+        }
+        .container{
+            max-width: 200rem;
+        }
+       .price-tag>span{
+        padding: 0%;
+       }
+        .grid:first-of-type{
+              border: 1px solid gold;
+        }
+
+        button{
+            background-color: #a98467;
+        }
+        button:hover{
+            background-color: #dde5b6;
+        }
+
+        li:nth-child(even){
+            background-color: rgb(129, 33, 33);
+            color: #dde5b6;
+        }
+
+        li{
+          list-style: none;
+          padding: 0;
+        }
+        footer a img{
+            size: 50px;
+            height: 50px;
+
+        }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <h1>TechGadget Comparison</h1>
+
+      <div class="grid">
+        <article id="standard">
+          <h2>Standard Model</h2>
+          <div>Perfect for daily use.
+            <div class="price-tag">
+              <p>$ 99</p>
+              <div>Includes free shipping</div>
+            </div>
+            <button class="buy">Buy Now</button>
+          </article>
+
+          <article>
+            <h2>Pro Model</h2>
+            <div>For the power users.</div>
+            <div class="price-tag"><p>$ 199</p></div>
+            <button class="buy">Buy Now</button>
+          </article>
+        </div>
+
+        <ul class="features">
+          <li>OLED Display</li>
+          <li>12-hour Battery</li>
+          <li>Water Resistant</li>
+          <li>5G Enabled</li>
+        </ul>
+      </main>
+      <footer>
+        <p>&copy; TechGadget Comparison </p>
+        <a href="https://www.instagram.com/">
+          <img src="instagram.jpg" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/">
+          <img src="2023_Facebook_icon.svg.png" alt="Facebook">
+        </a>
+      </footer>
+    </body>
+  </html>
